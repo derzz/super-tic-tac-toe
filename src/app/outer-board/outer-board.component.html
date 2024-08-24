@@ -1,0 +1,20 @@
+<p>{{message}}</p>
+<p> Player {{player}}</p>
+<div class="grid grid-rows-3">
+  <div>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 0)" (clickEmitter)="updateActive($event)" [activeIntake]="active[0]" [player]="player"/>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 1)" (clickEmitter)="updateActive($event)"[activeIntake]="active[1]"[player]="player"/>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 2)" [activeIntake]="active[2]"(clickEmitter)="updateActive($event)"[player]="player"/>
+  </div>
+  <div>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 3)" [activeIntake]="active[3]"(clickEmitter)="updateActive($event)"[player]="player"/>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 4)" [activeIntake]="active[4]"(clickEmitter)="updateActive($event)"[player]="player"/>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 5)" [activeIntake]="active[5]"(clickEmitter)="updateActive($event)"[player]="player"/>
+  </div>
+  <div>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 6)" [activeIntake]="active[6]"(clickEmitter)="updateActive($event)"[player]="player"/>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 7)" [activeIntake]="active[7]"(clickEmitter)="updateActive($event)"[player]="player"/>
+    <app-inner-board (winnerEmitter)="recieveWinner($event, 8)" [activeIntake]="active[8]"(clickEmitter)="updateActive($event)"[player]="player"/>
+  </div>
+</div>
+
