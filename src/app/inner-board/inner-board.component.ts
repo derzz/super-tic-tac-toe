@@ -17,7 +17,7 @@ export class InnerBoardComponent {
   // Outputs 0-8 based on what position in the square is clicked
   @Output() clickEmitter = new EventEmitter<number>();
   @Input() activeIntake = true;
-  @Input() player = 'X';
+  @Input() player = '';
 
   ngOnInit(){
     this.board = new Array(9).fill('');

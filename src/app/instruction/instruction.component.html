@@ -1,0 +1,32 @@
+<div class="flex flex-col border-4 items-center justify-center min-h-[50lvh] min-w-[50lvh] bg-cyan-100">
+  <h1 class="mb-4 text-3xl">
+    Instructions
+  </h1>
+
+  <div class="text-xl items-center">
+    <p class="mb-4">
+      Super Tic Tac Toe is an advanced version of the classic Tic Tac Toe game. The objective is to win more small boards to win the overall game.
+    </p>
+    <ul class="list-disc list-inside mb-4">
+      <li>Each cell in the main 3x3 grid contains a smaller 3x3 Tic Tac Toe board.</li>
+      <li>Players take turns playing on the smaller boards.</li>
+      <li>The position of your move in the smaller board determines the next smaller board your opponent must play in.</li>
+      <li>If a player is sent to a board that has already been won or is full, they can choose any board for their move.</li>
+      <li>Winning a smaller board is achieved by getting three in a row (horizontally, vertically, or diagonally).</li>
+      <li>The game is won by winning three smaller boards in a row on the main board.</li>
+    </ul>
+    <p>
+      To win the game, strategize to control the flow of the game and force your opponent into disadvantageous positions.
+    </p>
+  </div>
+
+
+  <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 mt-10
+    min-w-[20lvh]
+    min-h-[5lvh]
+    " [routerLink]="'/'">
+    <h1 class="text-2xl">
+      Got it!
+    </h1>
+  </button>
+</div>

@@ -80,12 +80,14 @@ export class OuterBoardComponent {
   updateActive(pos: number){
     console.log("updateActive called " + pos)
     if(this.board[pos] == 0){
-      for(let i = 0; i < 8; ++i){
+      for(let i = 0; i < 9; ++i){
         if(i != pos) this.active[i] = false
         else this.active[i] = true
       }
     }
-    else this.active.fill(true)
+    else{
+      this.active.fill(true) // Meant to fill all active boards
+    }
 
     this.player = this.player === 'X' ? 'O' : 'X';
     console.log("Finished updating!");

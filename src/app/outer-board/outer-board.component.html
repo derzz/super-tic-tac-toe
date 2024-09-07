@@ -1,5 +1,5 @@
 <p>{{message}}</p>
-<p> Player {{player}}</p>
+<p class="font-bold"> Player {{player}}'s Turn!</p>
 <div class="grid grid-rows-3">
   <div>
     <app-inner-board (winnerEmitter)="recieveWinner($event, 0)" (clickEmitter)="updateActive($event)" [activeIntake]="active[0]" [player]="player"/>
